@@ -1,0 +1,40 @@
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" value="{{callvalue }}">
+                </div>
+                <div>
+                    <input type="button" value="AC" class="operator" (click)="onclickvalue('AC','function')">
+                    <input type="button" value="DE" class="operator" (click)="onclickvalue('DE','function')">
+                    <input type="button" value="."  class="operator" (click)="onclickvalue('.','number')">
+                    <input type="button" value="/"  class="operator" (click)="onclickvalue('/','function')">
+                </div>
+                <div>
+                    <input type="button" value="7" (click)="onclickvalue('7','number')">
+                    <input type="button" value="8" (click)="onclickvalue('8','number')">
+                    <input type="button" value="9" (click)="onclickvalue('9','number')">
+                    <input type="button" value="*" class="operator" (click)="onclickvalue('*','function')">
+                </div>
+                <div>
+                    <input type="button" value="4" (click)="onclickvalue('4','number')">
+                    <input type="button" value="5" (click)="onclickvalue('5','number')">
+                    <input type="button" value="6" (click)="onclickvalue('6','number')">
+                    <input type="button" value="-" class="operator" (click)="onclickvalue('-','function')">
+                </div>
+                <div>
+                    <input type="button" value="1"(click)="onclickvalue('1','number')">
+                    <input type="button" value="2" (click)="onclickvalue('2','number')">
+                    <input type="button" value="3"(click)="onclickvalue('3','number')">
+                    <input type="button" value="+" class="operator"(click)="onclickvalue('+','function')">
+                </div>
+                <div>
+                    <input type="button" value="%" class="operator" (click)="onclickvalue('%','function')">
+                    <input type="button" value="0" (click)="onclickvalue('0','number')">
+                    <input type="button" value="=" class="equal operator" (click)="onclickvalue('=','function')">
+                </div>
+                
+                
+            </form>
+        </div>
+    </div>
